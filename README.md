@@ -1,6 +1,6 @@
-# Context2LoRA
+# CLIK
 
-Context2LoRA turns a context passage into LoRA parameters for a frozen language
+CLIK turns a context passage into LoRA parameters for a frozen language
 model. After the adapter is generated, the model can answer questions about the
 context without receiving the passage again in its prompt.
 
