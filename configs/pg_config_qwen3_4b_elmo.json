@@ -1,0 +1,22 @@
+{
+    "token_dim": 512,
+    "rank": 16,
+    "alpha": 32,
+    "hidden_aggregation": "elmo",
+    "model": {
+        "hidden_input_dim": 2560,
+        "d_model": 2048,
+        "head_dim": 128,
+        "dim_accumulation": 4,
+        "num_base_model_layers": 36,
+        "output_dim": 512,
+        "num_pg_layers": 12,
+        "num_input_hidden_states": 37
+    },
+    "prefix": "model.layers.",
+    "pg_mapping": {
+        "mlp.gate_proj": {"lora_A_dim": 2560, "lora_B_dim": 9728},
+        "mlp.up_proj":   {"lora_A_dim": 2560, "lora_B_dim": 9728},
+        "mlp.down_proj":  {"lora_A_dim": 9728, "lora_B_dim": 2560}
+    }
+}
